@@ -1,0 +1,19 @@
+body { font-family: Arial, sans-serif; margin: 0; color: #1c1c22; background: #f7f5f0; }
+header, main, footer { max-width: 1100px; margin: 0 auto; padding: 16px 24px; }
+header { background: #14121f; color: #fff; max-width: none; }
+header .sub { color: #cfc9dd; }
+.progress-bar { background: #3a3450; height: 14px; border-radius: 7px; overflow: hidden; }
+#bar { background: #ff5a3c; height: 100%; width: 0%; }
+.controls, .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+.controls input, .controls select, button { padding: 8px 10px; font-size: 15px; }
+button { background: #ff5a3c; color: #fff; border: 0; border-radius: 6px; cursor: pointer; }
+#roadmap { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 8px 20px; margin: 16px 0; }
+#roadmap li { margin: 8px 0; }
+.card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 10px 14px; margin: 8px 0; cursor: pointer; }
+.card.earned { border-color: #2e9e5b; background: #eefaf2; }
+.grade { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; text-transform: uppercase; }
+.grade.platinum { background: #e8f4ff; } .grade.gold { background: #ffe9a8; }
+.grade.silver { background: #e6e6e6; } .grade.bronze { background: #f0d9c0; }
+.tag { font-size: 12px; color: #b3261e; font-weight: bold; }
+#detail { background: #fff8e6; border: 2px solid #ff5a3c; border-radius: 10px; padding: 16px; margin: 16px 0; }
+.note, .hint { color: #555; }
