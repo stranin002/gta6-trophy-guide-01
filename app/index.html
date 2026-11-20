@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — 55 trophies, roadmap to Platinum</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>GTA VI Trophy Guide</h1>
+  <p class="sub">All 55 PS5 trophies — 1 Platinum, 2 Gold, 6 Silver, 46 Bronze. Names, descriptions and grades as PlayStation publishes them.</p>
+  <div class="progress-wrap">
+    <div class="progress-bar"><div id="bar"></div></div>
+    <p id="progress">0 of 55 earned — 0%</p>
+    <p id="bygrade"></p>
+  </div>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search trophy, mission, chapter…">
+    <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select>
+    <select id="earned"><option value="all">Earned + unearned</option><option value="earned">Earned</option><option value="unearned">Unearned</option></select>
+    <select id="miss"><option value="all">Missable: all</option><option value="missable">Missable only</option><option value="safe">Not missable</option></select>
+    <select id="cat"><option value="all">All kinds</option><option value="story">Story</option><option value="collectibles">Collectibles</option><option value="activities">Activities</option><option value="completion">100% completion</option></select>
+    <select id="sort"><option value="id">Order: trophy list</option><option value="az">A–Z</option><option value="diff">Hardest first</option></select>
+    <label class="spoiler"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+  </div>
+  <div class="actions">
+    <button id="export" type="button">Export checklist</button>
+    <label class="import">Import checklist <input id="import" type="file" accept="application/json"></label>
+    <button id="reset" type="button">Reset progress</button>
+  </div>
+</header>
+<main>
+  <section id="roadmap">
+    <h2>Roadmap to the Platinum</h2>
+    <ol>
+      <li><b>1. Play the story, do missables first.</b> Finish Chapters 1–4 and every mission trophy (2–13), and clear the missable partner and stranger strands (22–24, 26–27, 33–34, 39) before the story moves on. Unlocks: Just Like Paradise, Paradise Lost, Trust, Break the Bank.</li>
+      <li><b>2. Strangers and side strands.</b> Complete 8 stranger strands (25) and the Andy, Kenton, Billy, Randy and Tyrone finals. Unlocks: Strangers &amp; Freaks, Road to Rehabilitation, This Was No Boat Accident.</li>
+      <li><b>3. Activities and challenges.</b> Shooting Range gold (17), 250 stunts (15), 20 races (19), drone races (18), 50 Challenges (32). These stack with each other.</li>
+      <li><b>4. Collectibles and exploration.</b> Meditation spots (28), card sets (30), WAiNK It 100 spots (31), 100 vehicles (35), explore all of Leonida (42).</li>
+      <li><b>5. Heists and money.</b> Bank vaults (40), armored truck (41), gang operations (43), launder $250,000 (52), spend $100,000 (53), buy all garages (54).</li>
+      <li><b>6. Final mission and 100%.</b> Finish the final mission (7), replay it for the other choice (48–49), then mop up to 100% completion (14) and the Platinum pops: Vice Got a Price!</li>
+    </ol>
+    <p class="note">Every roadmap step cites the trophy it unlocks. No step asks for an impossible order: story first, collectibles and money last, 100% only at the end.</p>
+  </section>
+  <section>
+    <h2 id="count">All trophies</h2>
+    <p class="hint">Click a trophy for its full guide, source and missable flag. Tick the box when you earn it — progress is saved in this browser.</p>
+    <div id="list"></div>
+  </section>
+  <section id="detail" hidden>
+    <h2 id="dname"></h2>
+    <p id="ddesc"></p>
+    <dl id="dmeta"></dl>
+    <p id="dguide"></p>
+    <p id="dsource"></p>
+    <button id="dclose" type="button">Close detail</button>
+  </section>
+</main>
+<footer><p>Sources: PlayStation official trophy list (2026-11-18) for every name, description and grade. Guides are written in the maker's own words for this entry; each one names its source. GTA VI is unreleased at the time of writing, so steps drawn from the official descriptions are flagged where they are unconfirmed.</p></footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
